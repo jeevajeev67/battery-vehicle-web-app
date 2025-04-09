@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - BIT BATTERY VEHICLE</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-battery-full"></i> BIT BATTERY VEHICLE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookings.html">My Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logoutBtn">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Welcome Section -->
+            <div class="col-12 mb-4">
+                <h2>Welcome, <span id="userName">Student</span>!</h2>
+                <p class="text-muted">Book your campus ride easily and quickly.</p>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-plus-circle fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">New Booking</h5>
+                        <p class="card-text">Book a new ride for campus transportation</p>
+                        <a href="new-booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Bookings -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Active Bookings</h5>
+                        <p class="card-text">View and manage your current bookings</p>
+                        <a href="active-bookings.html" class="btn btn-primary">View Bookings</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking History -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-history fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Booking History</h5>
+                        <p class="card-text">Check your past booking records</p>
+                        <a href="booking-history.html" class="btn btn-primary">View History</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Bookings -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Recent Bookings</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="recentBookings" class="table-responsive">
+                            <!-- Recent bookings will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Campus Ride</h5>
+                    <p>Your trusted partner for campus transportation</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@campusride.com<br>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/student-dashboard.js"></script>
+</body>
+</html> 

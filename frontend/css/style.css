@@ -1,0 +1,131 @@
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --background-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(13, 110, 253, 0.1), rgba(13, 110, 253, 0.05));
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.hero-section h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    color: var(--primary-color);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .feature-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Status Badges */
+.badge {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-in-progress {
+    background-color: #0dcaf0;
+    color: #fff;
+}
+
+.badge-completed {
+    background-color: var(--success-color);
+    color: #fff;
+} 

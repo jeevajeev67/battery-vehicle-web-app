@@ -1,0 +1,12 @@
+{
+  "name": "campus-ride-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Campus Battery Vehicle Booking System",
+  "scripts": {
+    "start": "http-server -p 8081",
+    "dev": "http-server -p 8081"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
